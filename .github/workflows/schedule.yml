@@ -32,4 +32,4 @@ jobs:
           DB_PASS: ${{ secrets.DB_PASS }}
         run: |
           echo "$GOOGLE_CREDENTIALS" > credentials.json
-          python main.py
+          python __init__.py
