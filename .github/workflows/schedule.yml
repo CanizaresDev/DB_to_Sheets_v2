@@ -24,7 +24,8 @@ jobs:
       - name: Run the Python Script
         env:
           GOOGLE_CREDENTIALS: ${{ secrets.GOOGLE_CREDENTIALS }}
-          SPREADSHEET_ID: ${{ secrets.SPREADSHEET_ID }}
+          INPUT_SPREADSHEET_URL: ${{ secrets.INPUT_SPREADSHEET_URL }}
+          INPUT_WORKSHEET_NAME: ${{ secrets.INPUT_WORKSHEET_NAME }}
           DB_HOST: ${{ secrets.DB_HOST }}
           DB_PORT: ${{ secrets.DB_PORT }}
           DB_NAME: ${{ secrets.DB_NAME }}
